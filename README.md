@@ -34,9 +34,12 @@ python3 -m http.server 8765 --bind 127.0.0.1 --directory dist
 
 ## Публикация
 
-Сайт пока не опубликован. Действующий сайт не изменён.
-После утверждения: сохранить копию старого сайта, загрузить содержимое `dist/` в корень веб-сайта на хостинге, проверить HTTPS и перенаправление HTTP на HTTPS, доступность главной страницы и PDF, карту, телефоны и мобильную версию. Настройки сервера в этот архив не входят.
-В `canonical`, Open Graph, JSON-LD, `robots.txt` и `sitemap.xml` указан домен https://вояж-спб.рф/ . При смене домена обновите все эти места.
+Репозиторий: https://github.com/lexer85-hub/voyage-spb .
+Адрес GitHub Pages: https://lexer85-hub.github.io/voyage-spb/ .
+
+Workflow `.github/workflows/pages.yml` публикует только содержимое `dist/` при изменении сайта в ветке `main`. Его также можно запустить вручную через Actions → Publish site to GitHub Pages → Run workflow. Результат публикации проверяйте в Actions и в разделе Deployments репозитория.
+
+`canonical`, Open Graph, JSON-LD, `robots.txt` и `sitemap.xml` используют адрес GitHub Pages. Домен вояж-спб.рф и его DNS не перенастраиваются. При будущем подключении собственного домена нужно обновить эти адреса и настройки Pages.
 
 ## Графика и внешние ресурсы
 

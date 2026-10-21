@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://xn----btbbq3bin3i.xn--p1ai/sitemap.xml
+Sitemap: https://lexer85-hub.github.io/voyage-spb/sitemap.xml

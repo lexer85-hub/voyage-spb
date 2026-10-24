@@ -26,8 +26,9 @@
       type="font/woff2"
       crossorigin
     />
-    <link rel="stylesheet" href="styles.css?v=20261024-layout-review" />
+    <link rel="stylesheet" href="styles.css?v=20261024-consent" />
     <script src="script.js?v=20261024-yandex" defer></script>
+    <script src="analytics.js?v=20261024-consent" defer></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -660,6 +661,10 @@
           ><span>ИНН 7805137025 · ОГРН 1027802755287</span
           ><a href="downloads/voyazh-spb-requisites.pdf" download>Реквизиты компании</a>
         </div>
+        <div class="footer-privacy">
+          <a href="privacy.html">Конфиденциальность</a>
+          <button class="analytics-settings" type="button" hidden>Настройки аналитики</button>
+        </div>
       </div>
     </footer>
     <!-- Закреплённые действия на телефоне -->
@@ -676,5 +681,28 @@
           <path d="M7 17 17 7M7 7h10v10" /></svg
       ></a>
     </div>
+    <section
+      class="analytics-banner"
+      id="analytics-banner"
+      role="dialog"
+      aria-modal="false"
+      aria-labelledby="analytics-title"
+      aria-describedby="analytics-description"
+      hidden
+    >
+      <div class="analytics-banner-copy">
+        <h2 id="analytics-title">Аналитика сайта</h2>
+        <p id="analytics-description">
+          Разрешить Яндекс Метрику, чтобы помочь нам улучшить сайт? Можно продолжить без аналитики.
+          <a href="privacy.html">Подробнее</a>
+        </p>
+      </div>
+      <div class="analytics-banner-actions">
+        <button class="button analytics-reject" type="button" id="analytics-reject">
+          Без аналитики
+        </button>
+        <button class="button button-primary" type="button" id="analytics-accept">Разрешить</button>
+      </div>
+    </section>
   </body>
 </html>

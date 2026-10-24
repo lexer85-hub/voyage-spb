@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Конфиденциальность и аналитика — Вояж-СПб</title>
+    <meta
+      name="description"
+      content="Как сайт Вояж-СПб использует аналитику, сохраняет ваш выбор и загружает виджеты Яндекс Карт."
+    />
+    <meta name="theme-color" content="#352443" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=single-cyan" />
+    <link rel="stylesheet" href="styles.css?v=20261024-consent" />
+    <script src="analytics.js?v=20261024-consent" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Вояж-СПб — на главную">
+          <img
+            src="assets/logo.svg?v=safari-mask-20261022"
+            width="360"
+            height="82"
+            alt="Вояж-СПб — автозапчасти"
+          />
+        </a>
+      </div>
+    </header>
+    <main class="container privacy-content" id="main">
+      <a href="index.html">← Вернуться на сайт</a>
+      <h1>Конфиденциальность и аналитика</h1>
+      <p>
+        Информация об использовании данных на сайте ООО «Вояж-СПб». Обновлено 24 октября 2026 года.
+      </p>
+
+      <h2>Кто отвечает за сайт</h2>
+      <p>
+        ООО «ВОЯЖ-СПБ», ИНН 7805137025, ОГРН 1027802755287. Магазин находится по адресу:
+        Санкт-Петербург, улица Маршала Говорова, 10.
+      </p>
+      <p>
+        По вопросам использования данных можно написать на
+        <a href="mailto:voyage-spb@mail.ru">voyage-spb@mail.ru</a>.
+      </p>
+
+      <h2>Ваш выбор</h2>
+      <p>
+        Вы можете разрешить аналитику или нажать «Без аналитики». Сайт работает при любом выборе. До
+        согласия счётчик Яндекс Метрики не загружается.
+      </p>
+      <p>
+        Выбор сохраняется в браузере на 180 дней. После этого сайт снова запросит согласие. Если
+        браузер запрещает сохранение настроек, запрос может появляться при каждом открытии страницы.
+      </p>
+      <p>
+        <button class="analytics-settings" type="button" hidden>
+          Изменить настройки аналитики
+        </button>
+      </p>
+
+      <h2>Для чего нужна аналитика</h2>
+      <p>
+        Яндекс Метрика помогает понять, сколько людей посещает сайт, откуда они приходят и какими
+        разделами пользуются. Она может получать адрес и заголовок страницы, источник перехода,
+        сведения о браузере, устройстве и действиях на сайте, а также использовать cookies и
+        идентификаторы браузера.
+      </p>
+      <p>
+        В настройках сайта Вебвизор и карта кликов отключены. Сведения обрабатываются сервисом
+        Яндекса согласно
+        <a href="https://yandex.ru/legal/confidential/" target="_blank" rel="noopener noreferrer"
+          >его политике конфиденциальности</a
+        >. Подробнее о составе данных — в
+        <a
+          href="https://yandex.ru/support/metrica/ru/code/data-collected"
+          target="_blank"
+          rel="noopener noreferrer"
+          >документации Метрики</a
+        >.
+      </p>
+      <p id="analytics-availability">
+        Сейчас аналитика сайта не подключена. Статистика в счётчик магазина не отправляется. При
+        подключении аналитики сайт запросит согласие заново.
+      </p>
+
+      <h2>Как отказаться от аналитики</h2>
+      <p>
+        Откройте «Настройки аналитики» в подвале сайта и нажмите «Без аналитики». Дальнейшая работа
+        счётчика прекратится. Это не удаляет уже переданные сведения; по вопросам их обработки
+        обращайтесь по указанной выше почте. Сохранённые cookies можно удалить в настройках
+        браузера.
+      </p>
+
+      <h2>Карта и отзывы</h2>
+      <p>
+        Карта и отзывы — отдельные виджеты Яндекса. Они загружаются при открытии главной страницы
+        независимо от выбора аналитики. При загрузке браузер обращается к Яндексу и передаёт
+        технические сведения, включая IP-адрес и информацию о браузере; сервис может использовать
+        собственные cookies.
+      </p>
+      <p>Кнопка «Без аналитики» отключает счётчик магазина, но не отключает карту и отзывы.</p>
+
+      <h2>Связь с магазином</h2>
+      <p>
+        На сайте нет форм для отправки заявок. Кнопки связи открывают телефон, почту, MAX или
+        WhatsApp. Если вы обращаетесь в магазин, вы самостоятельно передаёте выбранному сервису и
+        сотрудникам сведения, необходимые для ответа на ваш вопрос.
+      </p>
+    </main>
+    <footer class="privacy-footer">
+      <div class="container">ООО «ВОЯЖ-СПБ» · <a href="index.html">На главную</a></div>
+    </footer>
+    <section
+      class="analytics-banner"
+      id="analytics-banner"
+      role="dialog"
+      aria-modal="false"
+      aria-labelledby="analytics-title"
+      aria-describedby="analytics-description"
+      hidden
+    >
+      <div class="analytics-banner-copy">
+        <h2 id="analytics-title">Аналитика сайта</h2>
+        <p id="analytics-description">
+          Разрешить Яндекс Метрику, чтобы помочь нам улучшить сайт? Можно продолжить без аналитики.
+          <a href="privacy.html">Подробнее</a>
+        </p>
+      </div>
+      <div class="analytics-banner-actions">
+        <button class="button analytics-reject" type="button" id="analytics-reject">
+          Без аналитики
+        </button>
+        <button class="button button-primary" type="button" id="analytics-accept">Разрешить</button>
+      </div>
+    </section>
+  </body>
+</html>

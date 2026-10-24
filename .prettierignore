@@ -1,0 +1,7 @@
+.git/
+backups/
+output/
+branding/
+qa-visual/
+dist/assets/
+dist/downloads/

@@ -1,0 +1,6 @@
+# PDF and image files are binary; do not treat their internal data as text diffs.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.webp binary
+*.woff2 binary

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="640" viewBox="0 0 1440 640" fill="none">
+  <!-- Quiet mechanical contours frame the copy and the brake disc. -->
+  <g stroke="#634583" stroke-width="1.2" opacity=".15">
+    <path d="M-80 112H40l52-52h380l40-40h190"/>
+    <path d="M-80 126H46l52-52h340"/>
+    <path d="M-60 574H232l34 34h268l44-44h134"/>
+    <path d="M-60 590H226l34 34h280l44-44h92"/>
+    <circle cx="1100" cy="320" r="340"/>
+    <circle cx="1100" cy="320" r="356" stroke-dasharray="3 13"/>
+    <path d="M1306 44h46l58 58h70M1384 502h-44l-88 88h-84"/>
+    <path d="m-42 344 50-29 50 29v58l-50 29-50-29Z"/>
+    <circle cx="8" cy="373" r="27"/>
+  </g>
+  <g stroke="#087780" stroke-width="1.4" opacity=".2">
+    <circle cx="438" cy="74" r="4"/>
+    <circle cx="712" cy="564" r="4"/>
+    <path d="M734 72h14m-7-7v14M1354 562h14m-7-7v14M74 494h14m-7-7v14"/>
+    <path d="M812 43a340 340 0 0 1 74-54M1399 482a340 340 0 0 1-47 65" stroke-width="3"/>
+  </g>
+</svg>

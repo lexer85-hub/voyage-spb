@@ -943,14 +943,18 @@ html {
   stroke-width: 2;
 }
 @media (max-width: 540px) {
-  .hero-actions .button:not(.button-primary) {
+  .hero-actions {
+    grid-template-columns: 1fr;
+  }
+  .hero-actions .button-primary {
+    grid-column: auto;
+  }
+  .hero-actions .button {
     padding: 12px 10px;
     gap: 8px;
-    font-size: 13px;
-    min-height: 64px;
-  }
-  .hero-actions .button:not(.button-primary) > span {
-    text-align: left;
+    font-size: 14px;
+    min-height: 56px;
+    white-space: nowrap;
   }
 }
 .hero-actions .button,
@@ -1739,9 +1743,6 @@ html {
   font-size: 14px;
 }
 @media (max-width: 360px) {
-  .business-panel h2 {
-    font-size: 32px;
-  }
   .business-actions .button {
     gap: 5px;
   }
@@ -1895,6 +1896,9 @@ html {
   }
 }
 @media (max-width: 360px) {
+  .business-panel h2 {
+    font-size: 32px;
+  }
   .business-actions .button {
     padding-inline: 12px;
   }
@@ -1960,20 +1964,6 @@ html {
   letter-spacing: -1.5px;
   line-height: 1.2;
   margin: 0;
-}
-.contacts-heading .contact-clock {
-  text-align: right;
-}
-.contact-clock strong {
-  font-size: 80px;
-  line-height: 1.2;
-  letter-spacing: -4px;
-}
-.contact-clock span {
-  display: block;
-  font-size: 10px;
-  letter-spacing: 1.5px;
-  color: #d3c8dc;
 }
 .contacts-grid {
   display: grid;
@@ -2048,9 +2038,6 @@ html {
   .contacts-section {
     padding: 60px 0;
   }
-  .contact-clock strong {
-    font-size: 64px;
-  }
   .contact-card h3 {
     font-size: 25px;
   }
@@ -2066,33 +2053,14 @@ html {
   .contacts-heading .eyebrow {
     font-size: 10px;
   }
-  .contact-clock strong {
-    font-size: 40px;
-    letter-spacing: -2px;
-  }
-  .contact-clock span {
-    font-size: 7px;
-    letter-spacing: 0.3px;
-  }
 }
 .contact-city {
   font-size: 14px;
 }
-@media (max-width: 540px) {
-  .contact-clock {
-    padding-top: 31px;
-  }
-}
 @media (max-width: 360px) {
-  .contact-clock {
-    display: none;
-  }
   .contact-card h3 {
     font-size: 20px;
   }
-}
-.contact-clock strong {
-  color: var(--yellow);
 }
 .contacts-grid {
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
@@ -2141,20 +2109,15 @@ html {
   .contacts-heading h2 {
     font-size: 29px;
   }
-  .contact-clock {
-    display: none;
-  }
 }
 .contacts-section {
   background: #f6f4f8;
   color: var(--ink);
   border-top: 1px solid #e5deeb;
 }
-.contacts-heading .eyebrow,
-.contacts-section .contact-clock strong {
+.contacts-heading .eyebrow {
   color: var(--purple);
 }
-.contacts-section .contact-clock span,
 .contacts-section .contact-city {
   color: var(--muted);
 }
@@ -2381,6 +2344,13 @@ html {
     font-size: 12px;
     min-height: 48px;
     padding: 12px 8px;
+    gap: 6px;
+    white-space: nowrap;
+  }
+  .mobile-contact-bar .button-icon {
+    width: 20px;
+    height: 20px;
+    flex-basis: 20px;
   }
   .mobile-contact-bar .button-primary {
     font-size: 13px;

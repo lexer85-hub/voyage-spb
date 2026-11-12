@@ -1328,6 +1328,7 @@ html {
   max-width: 100%;
   min-height: 52px;
   font-size: 13px;
+  flex-shrink: 0;
 }
 @media (max-width: 540px) {
   .catalog-help .button {
@@ -1843,6 +1844,25 @@ html {
   width: 100%;
   justify-content: center;
   text-align: center;
+}
+.business-contact-note {
+  margin: 14px 0 0;
+  color: #eee7f3;
+  font-size: 13px;
+  line-height: 1.65;
+  text-align: center;
+}
+.business-contact-note a {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto 4px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  overflow-wrap: anywhere;
 }
 .business-actions {
   gap: 18px;

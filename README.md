@@ -190,12 +190,14 @@ node --check dist/script.js
 ## Публикация
 
 [Репозиторий GitHub](https://github.com/lexer85-hub/voyage-spb) ·
-[Сайт GitHub Pages](https://lexer85-hub.github.io/voyage-spb/).
+[Сайт магазина](https://xn----btbbq3bin3i.xn--p1ai/).
 
 Workflow `.github/workflows/pages.yml` публикует только `dist/` после изменения
 этой папки в ветке `main` или ручного запуска workflow. Отправка локальных
 изменений в `main` может запустить публикацию. В рамках текущего аудита
 отправка изменений и публикация не выполнялись.
 
-SEO-адреса в HTML, `robots.txt` и `sitemap.xml` используют GitHub Pages.
-При переходе на другой домен их нужно обновить вместе с настройками хостинга.
+Основной адрес сайта — `https://xn----btbbq3bin3i.xn--p1ai/` (`вояж-спб.рф`).
+SEO-адреса в HTML, `robots.txt` и `sitemap.xml` должны указывать на этот домен.
+Хостинг остаётся на GitHub Pages; при смене основного домена адреса нужно
+обновить вместе с настройками хостинга.

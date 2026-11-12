@@ -1,7 +1,7 @@
 "use strict";
 
-// Укажите отдельный номер счётчика Вояж-СПб. При 0 Метрика не загружается.
-const VOYAGE_METRIKA_ID = 0;
+// Отдельный счётчик сайта Вояж-СПб.
+const VOYAGE_METRIKA_ID = 114224616;
 
 /** Согласие относится к конкретному счётчику и действует 180 дней. */
 function initAnalyticsConsent(counterId = VOYAGE_METRIKA_ID) {
